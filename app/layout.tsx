@@ -2,6 +2,7 @@ import Header from '@/components/header'
 import './globals.css'
 import { GeistSans } from 'geist/font'
 import ActiveSectionContextProvider from '@/context/active-section-context'
+import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Ricardo | Personal Portfolio',
@@ -21,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ActiveSectionContextProvider>
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
 
           {/* <Toaster position='top-right' />
             <ThemeSwitch /> */}
